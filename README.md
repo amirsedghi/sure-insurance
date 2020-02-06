@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Please make sure to install a cors plugin for your browser. This is what I installed in order to make the API calls: https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=en
+
+Before running any of the commands bellow please run `npm install`
 
 ## Available Scripts
 
