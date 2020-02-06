@@ -1,0 +1,20 @@
+.quote {
+  margin: 3rem 10rem;
+}
+
+.quote #quote-options {
+  width: 200px;
+}
+
+#go-back {
+  margin: 2rem;
+}
+
+.info-section {
+  margin-top: 20px;
+}
+
+.info-section #description {
+  color: #038d03;
+  font-weight: bold;
+}
