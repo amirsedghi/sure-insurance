@@ -4,4 +4,4 @@
 
 - npm install
 
-- npm start
+- npm start (will run the app on port 3000)
