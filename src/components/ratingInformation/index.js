@@ -43,10 +43,10 @@ class RatingInformation extends Component {
 
     return (
       <>
-        <div class="intro">
+        <div className="intro">
           Welcome! Please fill out this quick form to get your quote!
         </div>
-        <form class="form">
+        <form className="form">
           <TextField
             error={attemptedSubmit && first_name.length === 0}
             label="First Name"

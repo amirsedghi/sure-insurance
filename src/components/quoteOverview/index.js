@@ -22,7 +22,7 @@ class QuoteOverview extends Component {
   state = { selected: "" };
 
   componentDidMount() {
-    this.setState({ selected: Object.keys(this.props.quote)[0] });
+    this.setState({ selected: Object.keys(this.props.quote)[0] || "" });
   }
 
   onSelectChange = event => {
@@ -47,7 +47,7 @@ class QuoteOverview extends Component {
           <Divider />
           <List>
             {values.map(value => (
-              <ListItem>
+              <ListItem key={value}>
                 <ListItemText primary={value} />
               </ListItem>
             ))}
@@ -60,7 +60,7 @@ class QuoteOverview extends Component {
   getQuoteOptions = () => {
     const keys = Object.keys(this.props.quote);
     return keys.map(key => (
-      <MenuItem value={key}>
+      <MenuItem key={key} value={key}>
         {key.replace("_", " ").replace(/^\w/, c => c.toUpperCase())}
       </MenuItem>
     ));
